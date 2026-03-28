@@ -3,6 +3,11 @@ const app = express();
 const path = require('path');
 const { features } = require('process');
 
+require('dotenv').config();
+
+const port = process.env.PORT || 3000;
+const email = process.env.EMAIL_USER;
+
 // Setup EJS sebagai View Engine
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
