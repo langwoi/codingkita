@@ -1,0 +1,38 @@
+<nav class="glass sticky top-0 z-[100] border-b border-slate-100 py-4 px-6 md:px-20 flex justify-between items-center">
+    <div class="flex items-center gap-3">
+        <img src="/img/no-bg.png" alt="Logo CodingKita" class="h-10 w-auto object-contain">
+        <div class="text-2xl font-extrabold tracking-tighter leading-none flex items-center">
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-slate-900 to-slate-700">
+                Coding<span class="text-blue-600">Kita</span>
+            </span>
+        </div>
+    </div>
+
+    <div class="hidden md:flex space-x-8 font-semibold text-sm tracking-wide">
+        <a href="#home" class="hover:text-blue-600 transition">Beranda</a>
+        <a href="#keunggulan" class="hover:text-blue-600 transition">Keunggulan</a>
+        <a href="#harga" class="hover:text-blue-600 transition">Paket Harga</a>
+        <a href="#faq" class="hover:text-blue-600 transition">Tanya Jawab</a>
+    </div>
+
+    <div class="flex items-center gap-4">
+        <a href="https://wa.me/6285236509562" class="hidden md:block bg-blue-600 text-white px-6 py-2.5 rounded-xl font-bold hover:bg-blue-700 transition shadow-lg shadow-blue-100 text-sm">
+            Konsultasi Gratis
+        </a>
+
+        <button id="menu-btn" class="md:hidden text-slate-800 text-2xl focus:outline-none">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+
+    <div id="mobile-menu" class="fixed inset-0 bg-white z-[150] flex flex-col items-center justify-center space-y-8 text-xl font-bold transition-all duration-300 translate-x-full md:hidden">
+        <button id="close-btn" class="absolute top-6 right-6 text-3xl text-slate-800">
+            <i class="fas fa-times"></i>
+        </button>
+        <a href="#home" class="mobile-link">Beranda</a>
+        <a href="#keunggulan" class="mobile-link">Keunggulan</a>
+        <a href="#harga" class="mobile-link">Paket Harga</a>
+        <a href="#faq" class="mobile-link">Tanya Jawab</a>
+        <a href="https://wa.me/6285236509562" class="bg-blue-600 text-white px-8 py-3 rounded-xl">Konsultasi Gratis</a>
+    </div>
+</nav>
